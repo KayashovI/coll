@@ -1,0 +1,20 @@
+<header class="header">
+    <div class="header-logo">лучший store</div>
+    <nav class="header-nav">
+        <ul>
+            <li class="{% if request.path == '/' %} active {% endif %}">
+                <a href="/">Главное</a>
+            </li>
+            <li class="{% if request.path == '/catalog' %} active {% endif %}">
+                <a href="/catalog">Каталог</a>
+            </li>
+        </ul>
+    </nav>
+    {% if request.user.is_anonymous %}
+<div class=""><a href="/login">Войти</a></div>
+{% else %}
+    <div class=""><a href="/logout">выйти</a>
+
+</div>
+{% endif %}
+</header>

@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="{% static  'home/style.css' %}">
+</head>
+<body>
+{% include 'home/header.html' %}
+<h1>Регистрация</h1>
+<div class="">
+  <form method="post" action="/register/">
+
+    {% csrf_token %}
+    {{ form.as_table }}
+
+    <button >Зарегистрироваться</button>
+  </form>
+</div>
+</body>
+</html>

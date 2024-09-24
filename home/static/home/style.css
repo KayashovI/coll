@@ -1,0 +1,85 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif; /* Подключение шрифта Roboto из Google Fonts */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Стили для заголовка */
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    color: #333;
+}
+
+/* Стили для шапки */
+.header {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+/* Стили для навигационного меню */
+.header-nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.header-nav li {
+    display: inline-block;
+    position: relative;
+}
+
+.header-nav li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header-nav li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.header-nav li.active a {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Стили для основного контента */
+main {
+    padding: 2rem;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Подключение шрифтов Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
